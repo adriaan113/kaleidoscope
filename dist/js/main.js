@@ -1,0 +1,1 @@
+console.log("satan"),console.log(!0);

@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(21, 98, 185);
+    width: 100%;
+    height: 100vh;
+}
+
+.wrapper{
+    .kalei-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 4rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 10px;
+            li{
+                background-color: pink;
+                height: 20vmax;
+            
+                &:nth-child(1){
+                    background-color: darken(pink,30%);
+                }
+                &:nth-child(2){
+                    background-color: mix(pink, green,70%);
+                }
+                &:nth-child(3){
+                    background-color: adjust-hue(pink,80deg); ;
+                }
+                &:nth-child(4){
+                background-color: adjust-color(pink,blue, 25); ;
+                }
+                &:nth-child(5){
+                    background-color: change-color(pink,red, 100); ;
+                }
+                &:nth-child(6){
+                    background-color: scale-color(pink,green, 30); ;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "kaleidoscope",
+  "version": "1.0.0",
+  "description": "an attempt at a css and vanilla js kaleidoscope ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adriaan113/kaleidoscope.git"
+  },
+  "author": "adriaan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adriaan113/kaleidoscope/issues"
+  },
+  "homepage": "https://github.com/adriaan113/kaleidoscope#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}

@@ -1,0 +1,73 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1562b9;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper .kalei-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.wrapper .kalei-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 4rem;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.wrapper .kalei-container ul li {
+  background-color: pink;
+  height: 20vmax;
+}
+
+.wrapper .kalei-container ul li:nth-child(1) {
+  background-color: #ff274d;
+}
+
+.wrapper .kalei-container ul li:nth-child(2) {
+  background-color: #b3ad8e;
+}
+
+.wrapper .kalei-container ul li:nth-child(3) {
+  background-color: #f5ffc0;
+}
+
+.wrapper .kalei-container ul li:nth-child(4) {
+  background-color: #ffd9cb;
+}
+
+.wrapper .kalei-container ul li:nth-child(5) {
+  background-color: #ff64cb;
+}
+
+.wrapper .kalei-container ul li:nth-child(6) {
+  background-color: #ffd3cb;
+}
+/*# sourceMappingURL=style.css.map */
