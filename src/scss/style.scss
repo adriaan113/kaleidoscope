@@ -1,3 +1,41 @@
+//TO DO:
+//MAKE ALL THIS BEM
+
+
+//VARIABLES//
+
+$base-color: rgb(21, 98, 185);
+$primary-color: yellow;
+$secondary-color: green;
+$tertiary-color: red;
+
+//MIXINS//
+@mixin li-style-1 {
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+        background-color: darken($primary-color, $i * 10%);
+        }
+    }
+}   
+//mixin in een mixin? om alle  mixins samen te voegen?
+@mixin li-style-2 {
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+        background-color: adjust-hue($secondary-color, $i * 20deg);
+        }
+    }
+} 
+
+@mixin li-style-3 {
+    @for $i from 1 through 6 {
+        &:nth-child(#{$i}) {
+        background-color: change-color($tertiary-color, $primary-color, 25);
+        }
+    }
+} 
+
+//BASE STYLES//
+
 *{
     box-sizing: border-box;
 }
@@ -9,49 +47,85 @@ body{
 }
 
 body{
-    background-color: rgb(21, 98, 185);
+    background-color: $base-color;
     width: 100%;
     height: 100vh;
 }
 
+//KALADOSCOPE LAYER STYLES//
 .wrapper{
+    //position: relative;
     .kalei-container{
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        ul{
+        position: relative;
+        .layer-main,
+        .layer-1{
+            position: absolute;
             list-style: none;
             padding: 0;
-            margin: 4rem;
-            width: 100%;
+            width: calc(100% - 20px);
             display: grid;
+            justify-items: center;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2,1fr);
             gap: 10px;
             li{
-                background-color: pink;
-                height: 20vmax;
-            
-                &:nth-child(1){
-                    background-color: darken(pink,30%);
-                }
-                &:nth-child(2){
-                    background-color: mix(pink, green,70%);
-                }
-                &:nth-child(3){
-                    background-color: adjust-hue(pink,80deg); ;
-                }
-                &:nth-child(4){
-                background-color: adjust-color(pink,blue, 25); ;
-                }
-                &:nth-child(5){
-                    background-color: change-color(pink,red, 100); ;
-                }
-                &:nth-child(6){
-                    background-color: scale-color(pink,green, 30); ;
-                }
+                background-color: $base-color;
+                width: 100%;
+                aspect-ratio: 1/1;
+                @include li-style-1;
+            }
+        }
+        .layer-2{
+            li{
+                clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                @include li-style-2;
+            }
+        }
+        .layer-3{
+            li{
+                clip-path:ellipse(25% 40% at 50% 50%);
+                @include li-style-3;
+            }
+        }
+        .gridlines{
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5, 1fr);
+            list-style: none;
+            padding: 0;
+            // top: 0;
+            width: 100%;
+            li{
+                background-color: transparent;
+                border: 4px solid red;
+                aspect-ratio: 1/1;
             }
         }
     }
 }
+
+
+
+                // &:nth-child(1){
+                //     background-color: darken(pink,30%);
+                // }
+                // &:nth-child(2){
+                //     background-color: mix(pink, green,70%);
+                // }
+                // &:nth-child(3){
+                //     background-color: adjust-hue(pink,80deg); ;
+                // }
+                // &:nth-child(4){
+                // background-color: adjust-color(pink,blue, 25); ;
+                // }
+                // &:nth-child(5){
+                //     background-color: change-color(pink,red, 100); ;
+                // }
+                // &:nth-child(6){
+                //     background-color: scale-color(pink,green, 30); ;
+                // }
