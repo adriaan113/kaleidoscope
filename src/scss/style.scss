@@ -4,35 +4,61 @@
 
 //VARIABLES//
 
-$base-color: rgb(21, 98, 185);
-$primary-color: yellow;
-$secondary-color: green;
+$base-color: grey;
+$primary-color: blue;
+$secondary-color: yellow;
 $tertiary-color: red;
 
-//MIXINS//
-@mixin li-style-1 {
-    @for $i from 1 through 6 {
-        &:nth-child(#{$i}) {
-        background-color: darken($primary-color, $i * 10%);
-        }
-    }
-}   
+
+
 //mixin in een mixin? om alle  mixins samen te voegen?
-@mixin li-style-2 {
-    @for $i from 1 through 6 {
+
+//MIXINS//
+ 
+@mixin li-style-1($end) {
+    @for $i from 1 through $end {
         &:nth-child(#{$i}) {
-        background-color: adjust-hue($secondary-color, $i * 20deg);
+            background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
         }
     }
 } 
 
-@mixin li-style-3 {
-    @for $i from 1 through 6 {
+@mixin li-style-2($end) {
+    @for $i from 1 through $end {
         &:nth-child(#{$i}) {
-        background-color: change-color($tertiary-color, $primary-color, 25);
+        //background-color: rgb(random(255) * $i,random(255) * $i,random(255) * $i);
+        background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
+        }
+    } 
+}
+
+@mixin li-style-3($end) {
+    @for $i from 1 through $end {
+        &:nth-child(#{$i}) {
+        background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
         }
     }
 } 
+
+@mixin inner-order($end) {
+    @for $i from 1 through $end {
+        &:nth-child(#{$i}) {
+            order: random(5);
+        }
+    }
+} 
+
+@mixin color($color1) {
+    background-color: complement($color1); //gerbuik ik nergens
+}
+
+@mixin random-color{
+    background-color: rgb(random(255),random(255),random(255));
+}
+
+@mixin opacity{
+    opacity: random();
+}
 
 
 @mixin gridlines-border-thickness($start, $end, $side, $multiply-square:1, $add-square:0) {
@@ -85,19 +111,47 @@ body{
             grid-template-rows: repeat(2,1fr);
             //gap: 4px;
             li{
-                background-color: $base-color;
+                //background-color: $base-color;
                 width: 100%;
                 aspect-ratio: 1/1;
-                @include li-style-1;
+                @include li-style-1(6);
+            }
+        }
+        .layer-1{
+            li{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include inner-order(6);
+                .inner-layer-1{
+                    position: absolute;
+                    list-style: none;
+                    padding: 0;
+                    width: calc(100% - 20px);
+                    display: grid;
+                    justify-items: center;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2,1fr);
+                    width: 30%;
+                    li{
+                        @include inner-order(4);
+                        // opacity: .4;
+                        @include opacity;
+                        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+                        @include li-style-1(4);
+                    }
+                }
             }
         }
         .layer-2{
             li{
                 clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-                @include li-style-2;
+                @include li-style-2(6);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                //opacity: .9;
+                @include opacity;
                 .inner-layer-2{
                     position: absolute;
                     list-style: none;
@@ -109,9 +163,13 @@ body{
                     grid-template-rows: repeat(2,1fr);
                     width: 30%;
                     li{
-                        background-color: orange;
+                        background-color: $tertiary-color;
+                        //opacity: .8;
+                        @include opacity;
                         padding: .5rem;
                         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                        @include li-style-3(4);
+                        @include inner-order(4);
                     }  
                 }
             }
@@ -120,10 +178,12 @@ body{
             li{
                 clip-path:ellipse(25% 40% at 50% 50%);
                 position: relative;
-                @include li-style-3;
+                @include li-style-3(6);
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                //opacity: .5;
+                @include opacity;
                 .inner-layer-3{
                     position: absolute;
                     list-style: none;
@@ -135,9 +195,13 @@ body{
                     grid-template-rows: repeat(2,1fr);
                     width: 60%; 
                     li{
-                        background-color: pink;
+                        //background-color: $primary-color;
+                        //opacity: .6;
+                        @include opacity;
                         padding: .5rem;
                         clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                        @include li-style-2(4);
+                        @include inner-order(4);
                     }
                 }
             }
@@ -152,7 +216,7 @@ body{
             width: 100%;  
             li{
                 background-color: transparent;
-                border-width: 2px;
+                border-width: 1px;
                 border-style: solid;
                 border-color: $base-color;
                 aspect-ratio: 1/1;
