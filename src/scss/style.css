@@ -161,19 +161,223 @@ body {
   aspect-ratio: 1/1;
 }
 
-.wrapper .kalei-container .gridlines li:nth-child(1), .wrapper .kalei-container .gridlines li:nth-child(2), .wrapper .kalei-container .gridlines li:nth-child(3), .wrapper .kalei-container .gridlines li:nth-child(4), .wrapper .kalei-container .gridlines li:nth-child(5) {
-  border-top-width: 4px;
-}
-
-.wrapper .kalei-container .gridlines li:nth-child(21), .wrapper .kalei-container .gridlines li:nth-child(22), .wrapper .kalei-container .gridlines li:nth-child(23), .wrapper .kalei-container .gridlines li:nth-child(24), .wrapper .kalei-container .gridlines li:nth-child(25) {
-  border-bottom-width: 4px;
-}
-
-.wrapper .kalei-container .gridlines li:nth-child(1), .wrapper .kalei-container .gridlines li:nth-child(6), .wrapper .kalei-container .gridlines li:nth-child(11), .wrapper .kalei-container .gridlines li:nth-child(16), .wrapper .kalei-container .gridlines li:nth-child(21) {
+.wrapper .kalei-container .gridlines li:nth-child(1) {
   border-left-width: 4px;
 }
 
-.wrapper .kalei-container .gridlines li:nth-child(5), .wrapper .kalei-container .gridlines li:nth-child(10), .wrapper .kalei-container .gridlines li:nth-child(15), .wrapper .kalei-container .gridlines li:nth-child(20), .wrapper .kalei-container .gridlines li:nth-child(25) {
+.wrapper .kalei-container .gridlines li:nth-child(1) {
+  border-top-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(2) {
+  border-top-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(3) {
+  border-top-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(4) {
+  border-top-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(5) {
+  border-top-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(1) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(21) {
+  border-bottom-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(22) {
+  border-bottom-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(23) {
+  border-bottom-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(24) {
+  border-bottom-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(25) {
+  border-bottom-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(1) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(6) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(11) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(16) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(21) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(26) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(31) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(36) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(41) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(46) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(51) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(56) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(61) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(66) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(71) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(76) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(81) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(86) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(91) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(96) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(101) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(106) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(1) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(5) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(10) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(15) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(20) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(25) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(30) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(35) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(40) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(45) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(50) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(55) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(60) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(65) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(70) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(75) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(80) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(85) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(90) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(95) {
+  border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(100) {
   border-right-width: 4px;
 }
 /*# sourceMappingURL=style.css.map */
