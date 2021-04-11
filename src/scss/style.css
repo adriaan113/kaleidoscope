@@ -10,7 +10,7 @@ body {
 }
 
 body {
-  background-color: grey;
+  background-color: #151515;
   width: 100%;
   height: 100vh;
 }
@@ -52,38 +52,38 @@ body {
 
 .wrapper .kalei-container .layer-main li:nth-child(1),
 .wrapper .kalei-container .layer-1 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffad23), to(white));
-  background-image: linear-gradient(#ffad23, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ffff5c));
+  background-image: linear-gradient(white, #ffff5c);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(2),
 .wrapper .kalei-container .layer-1 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff3c), to(white));
-  background-image: linear-gradient(#ffff3c, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff66), to(#ff18ff));
+  background-image: linear-gradient(#ffff66, #ff18ff);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(3),
 .wrapper .kalei-container .layer-1 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#7effff), to(white));
-  background-image: linear-gradient(#7effff, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3fff), to(#69ffda));
+  background-image: linear-gradient(#ff3fff, #69ffda);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(4),
 .wrapper .kalei-container .layer-1 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff1bff), to(#ffbaf2));
-  background-image: linear-gradient(#ff1bff, #ffbaf2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff328), to(#ffffba));
+  background-image: linear-gradient(#fff328, #ffffba);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(5),
 .wrapper .kalei-container .layer-1 li:nth-child(5) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#baffff));
-  background-image: linear-gradient(white, #baffff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#b2ffe5), to(white));
+  background-image: linear-gradient(#b2ffe5, white);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(6),
 .wrapper .kalei-container .layer-1 li:nth-child(6) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff40ff), to(white));
-  background-image: linear-gradient(#ff40ff, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9890ff), to(#ffffdc));
+  background-image: linear-gradient(#9890ff, #ffffdc);
 }
 
 .wrapper .kalei-container .layer-1 li {
@@ -117,9 +117,9 @@ body {
 }
 
 .wrapper .kalei-container .layer-1 li:nth-child(4) {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
 }
 
 .wrapper .kalei-container .layer-1 li:nth-child(5) {
@@ -150,15 +150,15 @@ body {
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li {
-  opacity: 0.06292;
+  opacity: 0.50661;
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
           clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(1) {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(2) {
@@ -168,9 +168,9 @@ body {
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(3) {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(4) {
@@ -180,23 +180,23 @@ body {
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffb4), to(white));
-  background-image: linear-gradient(#ffffb4, white);
-}
-
-.wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#bdff3d), to(white));
-  background-image: linear-gradient(#bdff3d, white);
-}
-
-.wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(3) {
   background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
   background-image: linear-gradient(white, white);
 }
 
+.wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(2) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffeaff), to(#ecffea));
+  background-image: linear-gradient(#ffeaff, #ecffea);
+}
+
+.wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(3) {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a8e0c0), to(#1effff));
+  background-image: linear-gradient(#a8e0c0, #1effff);
+}
+
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#fff3ff));
-  background-image: linear-gradient(white, #fff3ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ff245a));
+  background-image: linear-gradient(white, #ff245a);
 }
 
 .wrapper .kalei-container .layer-2 li {
@@ -211,37 +211,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.77624;
+  opacity: 0.7754;
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#da90ff), to(#a890ff));
-  background-image: linear-gradient(#da90ff, #a890ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffa1), to(#ffffa1));
+  background-image: linear-gradient(#ffffa1, #ffffa1);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background-image: linear-gradient(white, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d88b90), to(#ffff9a));
+  background-image: linear-gradient(#d88b90, #ffff9a);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background-image: linear-gradient(white, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffdb), to(#46ff37));
+  background-image: linear-gradient(#ffffdb, #46ff37);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#8affff));
-  background-image: linear-gradient(white, #8affff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff3b), to(white));
+  background-image: linear-gradient(#ffff3b, white);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(5) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#6dff12));
-  background-image: linear-gradient(white, #6dff12);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#3118ff));
+  background-image: linear-gradient(white, #3118ff);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(6) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#8c11ff), to(#ffffc6));
-  background-image: linear-gradient(#8c11ff, #ffffc6);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0e0e), to(white));
+  background-image: linear-gradient(#ff0e0e, white);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 {
@@ -261,48 +261,48 @@ body {
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li {
   background-color: red;
-  opacity: 0.89563;
+  opacity: 0.8447;
   padding: .5rem;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#017eff));
-  background-image: linear-gradient(white, #017eff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff36), to(white));
+  background-image: linear-gradient(#ffff36, white);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffbc), to(white));
-  background-image: linear-gradient(#ffffbc, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ff36ff));
+  background-image: linear-gradient(white, #ff36ff);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#95ffff));
-  background-image: linear-gradient(white, #95ffff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#5bffff));
+  background-image: linear-gradient(white, #5bffff);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff6c), to(#ff36ff));
-  background-image: linear-gradient(#ffff6c, #ff36ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#50ffb8), to(#ffd0ff));
+  background-image: linear-gradient(#50ffb8, #ffd0ff);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(1) {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(2) {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
-}
-
-.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(3) {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
+}
+
+.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(3) {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(4) {
@@ -324,37 +324,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.43971;
+  opacity: 0.21923;
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3cff), to(#ffff94));
-  background-image: linear-gradient(#ff3cff, #ffff94);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#baffff), to(#ff69ff));
+  background-image: linear-gradient(#baffff, #ff69ff);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffde), to(#ffffdd));
-  background-image: linear-gradient(#ffffde, #ffffdd);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffa2), to(white));
+  background-image: linear-gradient(#ffffa2, white);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ffdca0));
-  background-image: linear-gradient(white, #ffdca0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ecffff), to(#77ffff));
+  background-image: linear-gradient(#ecffff, #77ffff);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#c67dff), to(#ffa63c));
-  background-image: linear-gradient(#c67dff, #ffa63c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#6fffa3));
+  background-image: linear-gradient(white, #6fffa3);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(5) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ccffff), to(white));
-  background-image: linear-gradient(#ccffff, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#40fff3), to(#feffff));
+  background-image: linear-gradient(#40fff3, #feffff);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(6) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe031), to(white));
-  background-image: linear-gradient(#ffe031, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#38ffb8), to(white));
+  background-image: linear-gradient(#38ffb8, white);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 {
@@ -373,30 +373,30 @@ body {
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li {
-  opacity: 0.04558;
+  opacity: 0.48121;
   padding: .5rem;
   -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
           clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#03709d));
-  background-image: linear-gradient(white, #03709d);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#5cffff));
+  background-image: linear-gradient(white, #5cffff);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff30ff), to(#ffff70));
-  background-image: linear-gradient(#ff30ff, #ffff70);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd2ff), to(#ffff4a));
+  background-image: linear-gradient(#ffd2ff, #ffff4a);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#caffff), to(#6cff58));
-  background-image: linear-gradient(#caffff, #6cff58);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5eff), to(#ff84ff));
+  background-image: linear-gradient(#ff5eff, #ff84ff);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff2aff), to(white));
-  background-image: linear-gradient(#ff2aff, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
+  background-image: linear-gradient(white, white);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(1) {
@@ -406,15 +406,15 @@ body {
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(2) {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(3) {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(3) {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(4) {
@@ -429,240 +429,240 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
   list-style: none;
-  padding: 0;
+  padding: 1rem;
   width: 100%;
+  height: 70%;
 }
 
 .wrapper .kalei-container .gridlines li {
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  border-color: grey;
-  aspect-ratio: 1/1;
+  border-color: #151515;
   position: relative;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(1) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(1) {
-  border-top-width: 4px;
+  border-top-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(2) {
-  border-top-width: 4px;
+  border-top-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(3) {
-  border-top-width: 4px;
+  border-top-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(4) {
-  border-top-width: 4px;
+  border-top-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(5) {
-  border-top-width: 4px;
+  border-top-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(1) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(21) {
-  border-bottom-width: 4px;
+  border-bottom-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(22) {
-  border-bottom-width: 4px;
+  border-bottom-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(23) {
-  border-bottom-width: 4px;
+  border-bottom-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(24) {
-  border-bottom-width: 4px;
+  border-bottom-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(25) {
-  border-bottom-width: 4px;
+  border-bottom-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(1) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(6) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(11) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(16) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(21) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(26) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(31) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(36) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(41) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(46) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(51) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(56) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(61) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(66) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(71) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(76) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(81) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(86) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(91) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(96) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(101) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(106) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(1) {
-  border-left-width: 4px;
+  border-left-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(5) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(10) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(15) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(20) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(25) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(30) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(35) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(40) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(45) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(50) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(55) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(60) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(65) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(70) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(75) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(80) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(85) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(90) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(95) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(100) {
-  border-right-width: 4px;
+  border-right-width: 2px;
 }
 
 .wrapper .kalei-container .gridlines li .inner-grid {
@@ -684,7 +684,7 @@ body {
   background-color: transparent;
   border-width: 1px;
   border-style: solid;
-  border-color: grey;
+  border-color: #151515;
   aspect-ratio: 1/1;
 }
 /*# sourceMappingURL=style.css.map */

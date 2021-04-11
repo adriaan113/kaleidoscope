@@ -4,7 +4,7 @@
 
 //VARIABLES//
 
-$base-color: grey;
+$base-color: rgb(21, 21, 21);
 $primary-color: blue;
 $secondary-color: yellow;
 $tertiary-color: red;
@@ -63,11 +63,11 @@ $tertiary-color: red;
 
 @mixin gridlines-border-thickness($start, $end, $side, $multiply-square:1, $add-square:0) {
     &:nth-child(#{1}){
-        border-left-width: 4px;  
+        border-left-width: 2px;  
     }
     @for $i from $start through $end {
         &:nth-child(#{($i * $multiply-square) + $add-square}) {
-            border-#{$side}-width: 4px;
+            border-#{$side}-width: 2px;
         } 
     } 
 }
@@ -210,16 +210,19 @@ body{
             position: absolute;
             display: grid;
             grid-template-columns: repeat(5,1fr);
-            grid-template-rows: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
             list-style: none;
-            padding: 0;
+            padding: 1rem;
             width: 100%;  
+            height: 70%;
             li{
                 background-color: transparent;
                 border-width: 1px;
                 border-style: solid;
                 border-color: $base-color;
-                aspect-ratio: 1/1;
+                // border-image-slice: 10%;
+                // border-image-source: linear-gradient(blue, pink);
+                //aspect-ratio: 1/1;
                 position: relative;
                 @include gridlines-border-thickness(1,5,top);
                 @include gridlines-border-thickness(21,25,bottom);
@@ -246,26 +249,3 @@ body{
         }
     }
 }
-
-
-
-
-
-                // &:nth-child(1){
-                //     background-color: darken(pink,30%);
-                // }
-                // &:nth-child(2){
-                //     background-color: mix(pink, green,70%);
-                // }
-                // &:nth-child(3){
-                //     background-color: adjust-hue(pink,80deg); ;
-                // }
-                // &:nth-child(4){
-                // background-color: adjust-color(pink,blue, 25); ;
-                // }
-                // &:nth-child(5){
-                //     background-color: change-color(pink,red, 100); ;
-                // }
-                // &:nth-child(6){
-                //     background-color: scale-color(pink,green, 30); ;
-                // }
