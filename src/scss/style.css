@@ -155,7 +155,25 @@ body {
 
 .wrapper .kalei-container .gridlines li {
   background-color: transparent;
-  border: 4px solid red;
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
   aspect-ratio: 1/1;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(1), .wrapper .kalei-container .gridlines li:nth-child(2), .wrapper .kalei-container .gridlines li:nth-child(3), .wrapper .kalei-container .gridlines li:nth-child(4), .wrapper .kalei-container .gridlines li:nth-child(5) {
+  border-top-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(21), .wrapper .kalei-container .gridlines li:nth-child(22), .wrapper .kalei-container .gridlines li:nth-child(23), .wrapper .kalei-container .gridlines li:nth-child(24), .wrapper .kalei-container .gridlines li:nth-child(25) {
+  border-bottom-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(1), .wrapper .kalei-container .gridlines li:nth-child(6), .wrapper .kalei-container .gridlines li:nth-child(11), .wrapper .kalei-container .gridlines li:nth-child(16), .wrapper .kalei-container .gridlines li:nth-child(21) {
+  border-left-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li:nth-child(5), .wrapper .kalei-container .gridlines li:nth-child(10), .wrapper .kalei-container .gridlines li:nth-child(15), .wrapper .kalei-container .gridlines li:nth-child(20), .wrapper .kalei-container .gridlines li:nth-child(25) {
+  border-right-width: 4px;
 }
 /*# sourceMappingURL=style.css.map */
