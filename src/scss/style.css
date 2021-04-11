@@ -84,6 +84,15 @@ body {
 .wrapper .kalei-container .layer-2 li {
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(1) {
@@ -110,9 +119,41 @@ body {
   background-color: navy;
 }
 
+.wrapper .kalei-container .layer-2 li .inner-layer-2 {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  width: calc(100% - 20px);
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  width: 30%;
+}
+
+.wrapper .kalei-container .layer-2 li .inner-layer-2 li {
+  background-color: orange;
+  padding: .5rem;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+          clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
 .wrapper .kalei-container .layer-3 li {
   -webkit-clip-path: ellipse(25% 40% at 50% 50%);
           clip-path: ellipse(25% 40% at 50% 50%);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(1) {
@@ -137,6 +178,28 @@ body {
 
 .wrapper .kalei-container .layer-3 li:nth-child(6) {
   background-color: #ff1900;
+}
+
+.wrapper .kalei-container .layer-3 li .inner-layer-3 {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  width: calc(100% - 20px);
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  width: 60%;
+}
+
+.wrapper .kalei-container .layer-3 li .inner-layer-3 li {
+  background-color: pink;
+  padding: .5rem;
+  -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+          clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 }
 
 .wrapper .kalei-container .gridlines {

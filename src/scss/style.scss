@@ -95,12 +95,51 @@ body{
             li{
                 clip-path:polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
                 @include li-style-2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .inner-layer-2{
+                    position: absolute;
+                    list-style: none;
+                    padding: 0;
+                    width: calc(100% - 20px);
+                    display: grid;
+                    justify-items: center;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2,1fr);
+                    width: 30%;
+                    li{
+                        background-color: orange;
+                        padding: .5rem;
+                        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                    }  
+                }
             }
         }
         .layer-3{
             li{
                 clip-path:ellipse(25% 40% at 50% 50%);
+                position: relative;
                 @include li-style-3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .inner-layer-3{
+                    position: absolute;
+                    list-style: none;
+                    padding: 0;
+                    width: calc(100% - 20px);
+                    display: grid;
+                    justify-items: center;
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-rows: repeat(2,1fr);
+                    width: 60%; 
+                    li{
+                        background-color: pink;
+                        padding: .5rem;
+                        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                    }
+                }
             }
         }
         .gridlines{
