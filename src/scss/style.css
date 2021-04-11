@@ -42,7 +42,6 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  gap: 10px;
 }
 
 .wrapper .kalei-container .layer-main li,
@@ -157,8 +156,9 @@ body {
   background-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-color: red;
+  border-color: #1562b9;
   aspect-ratio: 1/1;
+  position: relative;
 }
 
 .wrapper .kalei-container .gridlines li:nth-child(1) {
@@ -379,5 +379,28 @@ body {
 
 .wrapper .kalei-container .gridlines li:nth-child(100) {
   border-right-width: 4px;
+}
+
+.wrapper .kalei-container .gridlines li .inner-grid {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.wrapper .kalei-container .gridlines li .inner-grid li {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1562b9;
+  aspect-ratio: 1/1;
 }
 /*# sourceMappingURL=style.css.map */

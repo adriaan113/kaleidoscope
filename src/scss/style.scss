@@ -34,34 +34,8 @@ $tertiary-color: red;
     }
 } 
 
-// @mixin gridlines-border-thickness($start, $end, $side){
-//     @for $i from $start through $end {
-//         &:nth-child(#{$i}) {
-//             border-#{$side}-width: 4px;
-//         } 
-//     } 
-// }
 
-// @mixin gridlines-border-thickness-test($start, $end, $side){
-//     @for $i from $start through $end {
-//         &:nth-child(#{1}){
-//             border-#{$side}-width: 4px;  
-//         }
-//         &:nth-child(#{($i * 5)+ 1}) {
-//             border-#{$side}-width: 4px;
-//         } 
-//     } 
-// }
-
-// @mixin gridlines-border-thickness-best($start, $end, $side){
-//     @for $i from $start through $end {
-//         &:nth-child(#{$i * 5}) {
-//             border-#{$side}-width: 4px;
-//         } 
-//     } 
-// }
-
-@mixin gridlines-border-thickness-satan($start, $end, $side, $multiply-square:1, $add-square:0) {
+@mixin gridlines-border-thickness($start, $end, $side, $multiply-square:1, $add-square:0) {
     &:nth-child(#{1}){
         border-left-width: 4px;  
     }
@@ -109,7 +83,7 @@ body{
             justify-items: center;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2,1fr);
-            gap: 10px;
+            //gap: 4px;
             li{
                 background-color: $base-color;
                 width: 100%;
@@ -136,18 +110,35 @@ body{
             grid-template-rows: repeat(5, 1fr);
             list-style: none;
             padding: 0;
-            width: 100%;
-          
+            width: 100%;  
             li{
                 background-color: transparent;
                 border-width: 2px;
                 border-style: solid;
-                border-color: red;
+                border-color: $base-color;
                 aspect-ratio: 1/1;
-                @include gridlines-border-thickness-satan(1,5,top);
-                @include gridlines-border-thickness-satan(21,25,bottom);
-                @include gridlines-border-thickness-satan(1,21,left,5,1);
-                @include gridlines-border-thickness-satan(1,20,right,5);
+                position: relative;
+                @include gridlines-border-thickness(1,5,top);
+                @include gridlines-border-thickness(21,25,bottom);
+                @include gridlines-border-thickness(1,21,left,5,1);
+                @include gridlines-border-thickness(1,20,right,5);
+                .inner-grid{
+                    position: absolute;
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(3, 1fr);
+                    list-style: none;
+                    padding: 0;
+                    width: 100%; 
+                    transform: rotate(45deg);
+                    li{
+                        background-color: transparent;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: $base-color;
+                        aspect-ratio: 1/1;
+                    }
+                }
             }
         }
     }
