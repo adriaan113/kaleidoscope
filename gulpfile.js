@@ -10,6 +10,7 @@
 const gulp = require('gulp');
 const uglify = require('gulp-uglify');
 const server = require('gulp-webserver');
+//const concat = require('gulp-concat');
 
 // gulp.task('message',()=>{
 //     return console.log('satan');
@@ -21,7 +22,10 @@ gulp.task('copyHtml', ()=>{
 });
 
 gulp.task('minify', ()=>{
-   return gulp.src('src/js/*.js')
+   return gulp.src([
+                    'src/js/*.js',
+                    'node_modules/gsap/dist/gsap.min.js'
+                    ])
                 .pipe(uglify())
                 .pipe(gulp.dest('dist/js'))
 })
@@ -29,10 +33,18 @@ gulp.task('minify', ()=>{
 //gulp.task('default',['copyHtml', 'minify']); //alles in 1 command. je hoeft alleen gulp te typen
 
 gulp.task('server',()=>{
-    return gulp.src('./src')
+    return gulp.src(['./src'])
                 .pipe(server({
                     livereload: true,
                     open: true,
                 }));
-
 });
+
+
+gulp.task('all', gulp.series(['copyHtml','minify']));
+
+
+gulp.task('watch', gulp.series(['server', 'all']) ,()=>{
+    gulp.watch(['src/**/*.js','src/**/*.html'], gulp.series(['all']));
+})
+

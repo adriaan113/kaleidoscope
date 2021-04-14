@@ -42,48 +42,48 @@ body {
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
+  height: 100%;
 }
 
 .wrapper .kalei-container .layer-main li,
 .wrapper .kalei-container .layer-1 li {
   width: 100%;
-  aspect-ratio: 1/1;
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(1),
 .wrapper .kalei-container .layer-1 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ffff5c));
-  background-image: linear-gradient(white, #ffff5c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1dd2c6), to(#d21d29));
+  background-image: linear-gradient(#1dd2c6, #d21d29);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(2),
 .wrapper .kalei-container .layer-1 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff66), to(#ff18ff));
-  background-image: linear-gradient(#ffff66, #ff18ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3affff), to(#ff3a52));
+  background-image: linear-gradient(#3affff, #ff3a52);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(3),
 .wrapper .kalei-container .layer-1 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3fff), to(#69ffda));
-  background-image: linear-gradient(#ff3fff, #69ffda);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#57ffff), to(#ff577b));
+  background-image: linear-gradient(#57ffff, #ff577b);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(4),
 .wrapper .kalei-container .layer-1 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff328), to(#ffffba));
-  background-image: linear-gradient(#fff328, #ffffba);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#74ffff), to(#ff74a4));
+  background-image: linear-gradient(#74ffff, #ff74a4);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(5),
 .wrapper .kalei-container .layer-1 li:nth-child(5) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b2ffe5), to(white));
-  background-image: linear-gradient(#b2ffe5, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#91ffff), to(#ff91cd));
+  background-image: linear-gradient(#91ffff, #ff91cd);
 }
 
 .wrapper .kalei-container .layer-main li:nth-child(6),
 .wrapper .kalei-container .layer-1 li:nth-child(6) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9890ff), to(#ffffdc));
-  background-image: linear-gradient(#9890ff, #ffffdc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#aeffff), to(#ffaef6));
+  background-image: linear-gradient(#aeffff, #ffaef6);
 }
 
 .wrapper .kalei-container .layer-1 li {
@@ -96,42 +96,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.wrapper .kalei-container .layer-1 li:nth-child(1) {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-.wrapper .kalei-container .layer-1 li:nth-child(2) {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
-}
-
-.wrapper .kalei-container .layer-1 li:nth-child(3) {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
-}
-
-.wrapper .kalei-container .layer-1 li:nth-child(4) {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
-}
-
-.wrapper .kalei-container .layer-1 li:nth-child(5) {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
-}
-
-.wrapper .kalei-container .layer-1 li:nth-child(6) {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 {
@@ -147,56 +111,57 @@ body {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   width: 30%;
+  height: 50vh;
+  justify-items: center;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li {
-  opacity: 0.50661;
+  opacity: .6;
   -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
           clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  width: 40%;
+  height: 40%;
+  padding: 3rem;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(1) {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1dd2c6), to(#d21d29));
+  background-image: linear-gradient(#1dd2c6, #d21d29);
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(2) {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3affff), to(#ff3a52));
+  background-image: linear-gradient(#3affff, #ff3a52);
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(3) {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#57ffff), to(#ff577b));
+  background-image: linear-gradient(#57ffff, #ff577b);
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(4) {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#74ffff), to(#ff74a4));
+  background-image: linear-gradient(#74ffff, #ff74a4);
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background-image: linear-gradient(white, white);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffeaff), to(#ecffea));
-  background-image: linear-gradient(#ffeaff, #ecffea);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#a8e0c0), to(#1effff));
-  background-image: linear-gradient(#a8e0c0, #1effff);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ff245a));
-  background-image: linear-gradient(white, #ff245a);
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .wrapper .kalei-container .layer-2 li {
@@ -211,37 +176,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.7754;
+  opacity: .8;
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffa1), to(#ffffa1));
-  background-image: linear-gradient(#ffffa1, #ffffa1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d017), to(#1717d0));
+  background-image: linear-gradient(#d0d017, #1717d0);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#d88b90), to(#ffff9a));
-  background-image: linear-gradient(#d88b90, #ffff9a);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff2e), to(#2e2eff));
+  background-image: linear-gradient(#ffff2e, #2e2eff);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffdb), to(#46ff37));
-  background-image: linear-gradient(#ffffdb, #46ff37);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff45), to(#4545ff));
+  background-image: linear-gradient(#ffff45, #4545ff);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff3b), to(white));
-  background-image: linear-gradient(#ffff3b, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff5c), to(#5c5cff));
+  background-image: linear-gradient(#ffff5c, #5c5cff);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(5) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#3118ff));
-  background-image: linear-gradient(white, #3118ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff73), to(#7373ff));
+  background-image: linear-gradient(#ffff73, #7373ff);
 }
 
 .wrapper .kalei-container .layer-2 li:nth-child(6) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff0e0e), to(white));
-  background-image: linear-gradient(#ff0e0e, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff8a), to(#8a8aff));
+  background-image: linear-gradient(#ffff8a, #8a8aff);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 {
@@ -257,58 +222,59 @@ body {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   width: 30%;
+  height: 50vh;
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li {
-  background-color: red;
-  opacity: 0.8447;
+  background-color: #dd1a78;
+  opacity: .8;
   padding: .5rem;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff36), to(white));
-  background-image: linear-gradient(#ffff36, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dd1a78), to(#1add7f));
+  background-image: linear-gradient(#dd1a78, #1add7f);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#ff36ff));
-  background-image: linear-gradient(white, #ff36ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff34f0), to(#34fffe));
+  background-image: linear-gradient(#ff34f0, #34fffe);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#5bffff));
-  background-image: linear-gradient(white, #5bffff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff4eff), to(#4effff));
+  background-image: linear-gradient(#ff4eff, #4effff);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#50ffb8), to(#ffd0ff));
-  background-image: linear-gradient(#50ffb8, #ffd0ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff68ff), to(#68ffff));
+  background-image: linear-gradient(#ff68ff, #68ffff);
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(1) {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(2) {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(3) {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(4) {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(4) {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
 }
 
 .wrapper .kalei-container .layer-3 li {
@@ -324,37 +290,37 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: 0.21923;
+  opacity: .7;
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#baffff), to(#ff69ff));
-  background-image: linear-gradient(#baffff, #ff69ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dd1a78), to(#1add7f));
+  background-image: linear-gradient(#dd1a78, #1add7f);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffa2), to(white));
-  background-image: linear-gradient(#ffffa2, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff34f0), to(#34fffe));
+  background-image: linear-gradient(#ff34f0, #34fffe);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ecffff), to(#77ffff));
-  background-image: linear-gradient(#ecffff, #77ffff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff4eff), to(#4effff));
+  background-image: linear-gradient(#ff4eff, #4effff);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#6fffa3));
-  background-image: linear-gradient(white, #6fffa3);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff68ff), to(#68ffff));
+  background-image: linear-gradient(#ff68ff, #68ffff);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(5) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#40fff3), to(#feffff));
-  background-image: linear-gradient(#40fff3, #feffff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff82ff), to(#82ffff));
+  background-image: linear-gradient(#ff82ff, #82ffff);
 }
 
 .wrapper .kalei-container .layer-3 li:nth-child(6) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#38ffb8), to(white));
-  background-image: linear-gradient(#38ffb8, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9cff), to(#9cffff));
+  background-image: linear-gradient(#ff9cff, #9cffff);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 {
@@ -370,57 +336,60 @@ body {
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   width: 60%;
+  height: 50vh;
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li {
-  opacity: 0.48121;
+  opacity: .6;
   padding: .5rem;
   -webkit-clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
           clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  width: 100%;
+  height: 30%;
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(1) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#5cffff));
-  background-image: linear-gradient(white, #5cffff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d0d017), to(#1717d0));
+  background-image: linear-gradient(#d0d017, #1717d0);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(2) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffd2ff), to(#ffff4a));
-  background-image: linear-gradient(#ffd2ff, #ffff4a);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff2e), to(#2e2eff));
+  background-image: linear-gradient(#ffff2e, #2e2eff);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(3) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff5eff), to(#ff84ff));
-  background-image: linear-gradient(#ff5eff, #ff84ff);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff45), to(#4545ff));
+  background-image: linear-gradient(#ffff45, #4545ff);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(4) {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white));
-  background-image: linear-gradient(white, white);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffff5c), to(#5c5cff));
+  background-image: linear-gradient(#ffff5c, #5c5cff);
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(1) {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 2rem;
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(2) {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 2rem;
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(3) {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 2rem;
 }
 
 .wrapper .kalei-container .layer-3 li .inner-layer-3 li:nth-child(4) {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 2rem;
 }
 
 .wrapper .kalei-container .gridlines {

@@ -18,7 +18,11 @@
   "homepage": "https://github.com/adriaan113/kaleidoscope#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "gsap": "^3.6.1"
   }
 }

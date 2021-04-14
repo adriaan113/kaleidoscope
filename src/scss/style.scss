@@ -1,13 +1,14 @@
 //TO DO:
 //MAKE ALL THIS BEM
+//CANVAS??
 
 
 //VARIABLES//
 
 $base-color: rgb(21, 21, 21);
-$primary-color: blue;
-$secondary-color: yellow;
-$tertiary-color: red;
+$first-color: rgb(29, 210, 198);
+$second-color: rgb(208, 208, 23);
+$third-color: rgb(221, 26, 120);
 
 
 
@@ -18,7 +19,8 @@ $tertiary-color: red;
 @mixin li-style-1($end) {
     @for $i from 1 through $end {
         &:nth-child(#{$i}) {
-            background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
+            //background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
+            background-image: linear-gradient($first-color * $i,complement($first-color) * $i);
         }
     }
 } 
@@ -27,7 +29,8 @@ $tertiary-color: red;
     @for $i from 1 through $end {
         &:nth-child(#{$i}) {
         //background-color: rgb(random(255) * $i,random(255) * $i,random(255) * $i);
-        background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
+        //background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
+        background-image: linear-gradient($second-color * $i,complement($second-color) * $i);
         }
     } 
 }
@@ -35,7 +38,8 @@ $tertiary-color: red;
 @mixin li-style-3($end) {
     @for $i from 1 through $end {
         &:nth-child(#{$i}) {
-        background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
+        //background-image: linear-gradient(rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)),rgb(random(255) * random(10),random(255) * random(10),random(255) * random(10)));
+        background-image: linear-gradient($third-color * $i,complement($third-color) * $i);
         }
     }
 } 
@@ -109,11 +113,12 @@ body{
             justify-items: center;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2,1fr);
+            height: 100%;
             //gap: 4px;
             li{
                 //background-color: $base-color;
                 width: 100%;
-                aspect-ratio: 1/1;
+                //aspect-ratio: 1/1;
                 @include li-style-1(6);
             }
         }
@@ -122,7 +127,7 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                @include inner-order(6);
+                // @include inner-order(6);
                 .inner-layer-1{
                     position: absolute;
                     list-style: none;
@@ -133,12 +138,30 @@ body{
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(2,1fr);
                     width: 30%;
+                    height: 50vh;
+                    justify-items: center;
+                    //align-items: center;
                     li{
-                        @include inner-order(4);
-                        // opacity: .4;
-                        @include opacity;
+                        //@include inner-order(4);
+                        opacity: .6;
+                        //@include opacity;
                         clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
                         @include li-style-1(4);
+                        width: 40%;
+                        height: 40%;
+                        padding: 3rem;
+                        &:nth-child(1){
+                            align-self: flex-start;
+                        }
+                        &:nth-child(2){
+                            align-self: flex-start;
+                        }
+                        &:nth-child(3){
+                            align-self: flex-end;
+                        }
+                        &:nth-child(4){
+                            align-self: flex-end;
+                        }
                     }
                 }
             }
@@ -150,8 +173,8 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                //opacity: .9;
-                @include opacity;
+                opacity: .8;
+                //@include opacity;
                 .inner-layer-2{
                     position: absolute;
                     list-style: none;
@@ -162,10 +185,11 @@ body{
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(2,1fr);
                     width: 30%;
+                    height: 50vh;
                     li{
-                        background-color: $tertiary-color;
-                        //opacity: .8;
-                        @include opacity;
+                        background-color: $third-color;
+                        opacity: .8;
+                        //@include opacity;
                         padding: .5rem;
                         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
                         @include li-style-3(4);
@@ -182,8 +206,8 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                //opacity: .5;
-                @include opacity;
+                opacity: .7;
+                //@include opacity;
                 .inner-layer-3{
                     position: absolute;
                     list-style: none;
@@ -194,14 +218,33 @@ body{
                     grid-template-columns: repeat(2, 1fr);
                     grid-template-rows: repeat(2,1fr);
                     width: 60%; 
+                    height: 50vh;
                     li{
                         //background-color: $primary-color;
-                        //opacity: .6;
-                        @include opacity;
+                        opacity: .6;
+                        //@include opacity;
                         padding: .5rem;
                         clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
                         @include li-style-2(4);
-                        @include inner-order(4);
+                        //@include inner-order(4);
+                        width: 100%;
+                        height: 30%;
+                        &:nth-child(1){
+                            align-self: flex-end;
+                            margin-bottom: 2rem;
+                        }
+                        &:nth-child(2){
+                            align-self: flex-end;
+                            margin-bottom: 2rem;
+                        }
+                        &:nth-child(3){
+                            align-self: flex-start;
+                            margin-top: 2rem;
+                        }
+                        &:nth-child(4){
+                            align-self: flex-start;
+                            margin-top: 2rem;
+                        }
                     }
                 }
             }
