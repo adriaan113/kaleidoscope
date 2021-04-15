@@ -1,6 +1,8 @@
 'use strict';
 
-// import { gsap } from "gsap";
+// const { default: gsap } = require("gsap/gsap-core");
+
+//import { gsap } from "gsap";
 
 function animateLayer(layer,deg,sec){
     const innerLayer1 = document.querySelectorAll(layer);
@@ -16,10 +18,29 @@ function animateLayer(layer,deg,sec){
     }
 }
 
-animateLayer('.inner-layer-1',360,5);
-animateLayer('.inner-layer-2',-360,3);
-animateLayer('.inner-layer-3',360,6);
-animateLayer('.inner-grid',-360,10);
+// animateLayer('.inner-layer-1',360,5);
+// animateLayer('.inner-layer-2',-360,3);
+// animateLayer('.inner-layer-3',360,6);
+// animateLayer('.inner-grid',-360,10);
+
+
+const testLayer = document.querySelector('.layer-1');
+const testLayer2 = document.querySelector('.inner-layer-1');
+const baseLayer = document.querySelector('.kalei-container');
+
+console.log(testLayer2.children[1]);
+
+
+gsap.to(testLayer2.children[1],{
+    scrollTrigger:{
+        trigger: baseLayer,
+        pin: true,
+        scrub: true,
+        markers: true
+    },
+    rotation: 45
+});
+
 
 
 

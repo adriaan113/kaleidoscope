@@ -10,7 +10,7 @@
 const gulp = require('gulp');
 const uglify = require('gulp-uglify');
 const server = require('gulp-webserver');
-//const concat = require('gulp-concat');
+const concat = require('gulp-concat');
 
 // gulp.task('message',()=>{
 //     return console.log('satan');
@@ -21,12 +21,13 @@ gulp.task('copyHtml', ()=>{
                 .pipe(gulp.dest('dist'));
 });
 
-gulp.task('minify', ()=>{
+gulp.task('scripts', ()=>{
    return gulp.src([
-                    'src/js/*.js',
-                    'node_modules/gsap/dist/gsap.min.js'
+                    'node_modules/gsap/dist/gsap.min.js',
+                    'src/js/*.js'
                     ])
-                .pipe(uglify())
+                .pipe(concat('all.js'))
+                // .pipe(uglify())
                 .pipe(gulp.dest('dist/js'))
 })
 
@@ -41,10 +42,11 @@ gulp.task('server',()=>{
 });
 
 
-gulp.task('all', gulp.series(['copyHtml','minify']));
+
+gulp.task('all', gulp.series(['copyHtml','scripts']));
 
 
-gulp.task('watch', gulp.series(['server', 'all']) ,()=>{
+gulp.task('watch', gulp.series(['all','server']) ,()=>{
     gulp.watch(['src/**/*.js','src/**/*.html'], gulp.series(['all']));
 })
 
