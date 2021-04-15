@@ -13,6 +13,7 @@ const thirdColor = 'rgb(221, 26, 120)';
 
 
 const wrapper = document.querySelector('.wrapper'); //global
+const baselayer = document.querySelector('.kalei-container');
 
 
 function animateInnerLayer(layer,rotation){ 
@@ -26,7 +27,7 @@ function animateInnerLayer(layer,rotation){
                     gsap.to(innerLayer[i].children[j],{
                         scrollTrigger:{
                             trigger: wrapper,
-                            pin: true,
+                            pin: baselayer,
                             scrub: 1,
                             markers: true
                         },
@@ -37,7 +38,7 @@ function animateInnerLayer(layer,rotation){
                     gsap.to(innerLayer[i].children[j],{
                         scrollTrigger:{
                             trigger: wrapper,
-                            pin: true,
+                            pin: baselayer,
                             scrub: 1,
                             //markers: true
                         },
@@ -50,7 +51,7 @@ function animateInnerLayer(layer,rotation){
                     gsap.to(innerLayer[i].children[j],{
                         scrollTrigger:{
                             trigger: wrapper,
-                            pin: true,
+                            pin: baselayer,
                             scrub: 1,
                             //markers: true
                         },
@@ -71,7 +72,7 @@ function scrollTrig(layer,color1,color2){
     gsap.to(layer,{
         scrollTrigger:{
             trigger: wrapper,
-            pin: true,
+            pin: baselayer,
             scrub: 1,
             markers: true
         },
@@ -98,7 +99,7 @@ function animateOuterLayer(layer){
     }
 
 animateOuterLayer('.layer-');
-animateInnerLayer('.inner-layer-', 360);
+animateInnerLayer('.inner-layer-', 720);
 
 
 
