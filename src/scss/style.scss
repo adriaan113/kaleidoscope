@@ -91,7 +91,7 @@ body{
 body{
     background-color: $base-color;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 //KALADOSCOPE LAYER STYLES//
@@ -128,6 +128,8 @@ body{
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
+                //transform: none !important;
                 // @include inner-order(6);
                 .inner-layer-1{
                     position: absolute;
