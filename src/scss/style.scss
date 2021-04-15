@@ -225,7 +225,7 @@ body{
                         opacity: .6;
                         //@include opacity;
                         padding: .5rem;
-                        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+                        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
                         @include li-style-2(4);
                         //@include inner-order(4);
                         width: 100%;
