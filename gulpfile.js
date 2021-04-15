@@ -23,11 +23,11 @@ gulp.task('copyHtml', ()=>{
 
 gulp.task('scripts', ()=>{
    return gulp.src([
-                    'node_modules/gsap/dist/gsap.min.js',
+                    // 'node_modules/gsap/dist/gsap.min.js',
                     'src/js/*.js'
                     ])
-                .pipe(concat('all.js'))
-                // .pipe(uglify())
+                //.pipe(concat('all.js'))
+                .pipe(uglify())
                 .pipe(gulp.dest('dist/js'))
 })
 
