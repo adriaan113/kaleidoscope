@@ -25,21 +25,39 @@ function animateLayer(layer,deg,sec){
 
 
 const testLayer = document.querySelector('.layer-1');
-const testLayer2 = document.querySelector('.inner-layer-1');
+const testLayer2 = document.querySelectorAll('.inner-layer-1');
 const baseLayer = document.querySelector('.kalei-container');
+const wrapper = document.querySelector('.wrapper');
 
-console.log(testLayer2.children[1]);
+//console.log(testLayer2.children[1]);
 
 
-gsap.to(testLayer2.children[1],{
-    scrollTrigger:{
-        trigger: baseLayer,
-        pin: true,
-        scrub: true,
-        markers: true
-    },
-    rotation: 45
-});
+for(let i=0;i<testLayer2.length;i++){
+    for(let j=0;j<testLayer2[i].children.length;j++){
+        gsap.to(testLayer2[i].children[j],{
+            scrollTrigger:{
+                trigger: wrapper,
+                pin: true,
+                scrub: 1,
+                markers: true
+            },
+            rotation: 360
+        });
+
+        //console.log(testLayer2[i].children[j]);
+    }
+    
+}
+
+// gsap.to(testLayer2.children[1],{
+//     scrollTrigger:{
+//         trigger: baseLayer,
+//         pin: true,
+//         scrub: 1,
+//         markers: true
+//     },
+//     rotation: 360
+// });
 
 
 
