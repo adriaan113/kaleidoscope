@@ -116,7 +116,6 @@ body {
       grid-template-rows: repeat(2, 1fr);
   width: 30%;
   height: 50vh;
-  justify-items: center;
 }
 
 .wrapper .kalei-container .layer-1 li .inner-layer-1 li {
@@ -258,27 +257,27 @@ body {
 }
 
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(1) {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
-}
-
-.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(2) {
-  -webkit-box-ordinal-group: 5;
-      -ms-flex-order: 4;
-          order: 4;
-}
-
-.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(3) {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
+.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(2) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(3) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
 .wrapper .kalei-container .layer-2 li .inner-layer-2 li:nth-child(4) {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .wrapper .kalei-container .layer-3 li {

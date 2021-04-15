@@ -5,19 +5,20 @@
 //import { gsap } from "gsap";
 
 
-
+//COLORS SIMILAR TO SASS COLORS
 const baseColor = 'rgb(21, 21, 21)';
 const firstColor = 'rgb(29, 210, 198)';
 const secondColor = 'rgb(208, 208, 23)';
 const thirdColor = 'rgb(221, 26, 120)';
 
-
-const wrapper = document.querySelector('.wrapper'); //global
+///GLOBAL VARIABLES
+const wrapper = document.querySelector('.wrapper'); 
 const baselayer = document.querySelector('.kalei-container');
 
-
+//ANIMATE ALL THE INNER UL'S INSIDE THE THREE MAIN UL'S
 function animateInnerLayer(layer,rotation){ 
 
+    //LOOPING THROUGH THE LAYERS
     for(let x=1;x<=3;x++){
         const innerLayer = document.querySelectorAll(`${layer}${+ x}`);
 
@@ -68,6 +69,7 @@ function animateInnerLayer(layer,rotation){
     }
 }
 
+//SCROLLTRIGGER FUNCTION TO REDUCE CODE
 function scrollTrig(layer,color1,color2){
     gsap.to(layer,{
         scrollTrigger:{
@@ -81,6 +83,7 @@ function scrollTrig(layer,color1,color2){
     });
 }
 
+//ANIMATE THE OUTER UL'S. FOR NOW ONLY COLOR CHANGE DUE TO BAD TRANSFORM ON THE STAR CLIP-PATH(inner-layer-1 li)
 function animateOuterLayer(layer){
 
     for(let x=1;x<=3;x++){
@@ -98,6 +101,7 @@ function animateOuterLayer(layer){
         }
     }
 
+//EXECUTE
 animateOuterLayer('.layer-');
 animateInnerLayer('.inner-layer-', 720);
 
