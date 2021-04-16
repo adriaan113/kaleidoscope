@@ -35,7 +35,8 @@ function animateInnerLayer(layer,rotation){
                         rotation: -rotation,
                         backgroundImage: 'linear-gradient(blue, green)'
                     });
-                // }else if( x=== 2){
+                 }
+                 //else if( x=== 2){
                 //     gsap.to(innerLayer[i].children[j],{
                 //         scrollTrigger:{
                 //             trigger: wrapper,
