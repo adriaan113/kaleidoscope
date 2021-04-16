@@ -35,34 +35,34 @@ function animateInnerLayer(layer,rotation){
                         rotation: -rotation,
                         backgroundImage: 'linear-gradient(blue, green)'
                     });
-                }else if( x=== 2){
-                    gsap.to(innerLayer[i].children[j],{
-                        scrollTrigger:{
-                            trigger: wrapper,
-                            pin: baselayer,
-                            scrub: 1,
-                            //markers: true
-                        },
-                        //rotation: rotation,
-                        scale: .2,
-                        rotationY: 360,
-                        // backgroundImage: 'linear-gradient(pink, brown)'
-                    });
-                }else if(x===3){
-                    gsap.to(innerLayer[i].children[j],{
-                        scrollTrigger:{
-                            trigger: wrapper,
-                            pin: baselayer,
-                            scrub: 1,
-                            //markers: true
-                        },
-                        rotation: rotation,
-                        scaleX: .5,
-                        skewY: 45,
-                        rotationX: rotation,
-                        backgroundImage: 'linear-gradient(red, yellow)'
-                    });
-                }
+                // }else if( x=== 2){
+                //     gsap.to(innerLayer[i].children[j],{
+                //         scrollTrigger:{
+                //             trigger: wrapper,
+                //             pin: baselayer,
+                //             scrub: 1,
+                //             //markers: true
+                //         },
+                //         //rotation: rotation,
+                //         scale: .2,
+                //         rotationY: 360,
+                //         // backgroundImage: 'linear-gradient(pink, brown)'
+                //     });
+                // }else if(x===3){
+                //     gsap.to(innerLayer[i].children[j],{
+                //         scrollTrigger:{
+                //             trigger: wrapper,
+                //             pin: baselayer,
+                //             scrub: 1,
+                //             //markers: true
+                //         },
+                //         rotation: rotation,
+                //         scaleX: .5,
+                //         skewY: 45,
+                //         rotationX: rotation,
+                //         backgroundImage: 'linear-gradient(red, yellow)'
+                //     });
+                // }
                 
             }  
         }
@@ -103,7 +103,7 @@ function animateOuterLayer(layer){
 
 //EXECUTE
 //animateOuterLayer('.layer-');
-animateInnerLayer('.inner-layer-', 720);
+animateInnerLayer('.inner-layer-', 360);
 
 
 
