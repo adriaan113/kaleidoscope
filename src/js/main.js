@@ -102,7 +102,7 @@ function animateOuterLayer(layer){
     }
 
 //EXECUTE
-animateOuterLayer('.layer-');
+//animateOuterLayer('.layer-');
 animateInnerLayer('.inner-layer-', 720);
 
 
